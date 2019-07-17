@@ -1142,6 +1142,7 @@ vendor/lib/hw/keystore.sdm660.so
 vendor/lib64/hw/keystore.sdm660.so
 
 # Listen
+vendor/etc/audio.scd
 vendor/lib/hw/sound_trigger.primary.sdm660.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libgcs-calwrapper.so
@@ -1149,11 +1150,15 @@ vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/libsmwrapper.so
+vendor/lib/libnwa.so
+vendor/lib/libsse.so
 vendor/lib64/hw/sound_trigger.primary.sdm660.so
 vendor/lib64/libgcs-calwrapper.so
 vendor/lib64/libgcs-ipc.so
 vendor/lib64/libgcs-osal.so
 vendor/lib64/libgcs.so
+vendor/lib64/libnwa.so
+vendor/lib64/libsse.so
 
 # Media
 lib/libmmosal.so
@@ -1228,25 +1233,6 @@ vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
 
 # Perf
-bin/perfservice
-etc/init/perfservice.rc
-etc/perf/whitelistedapps.xml
-lib/vendor.qti.hardware.perf@1.0.so
-lib/vendor.qti.hardware.iop@1.0.so
-lib/vendor.qti.hardware.iop@2.0.so
-lib/libqti_performance.so
-lib/libqti-util_system.so
-lib/libqti-perfd-client_system.so
-lib/libqti-iopd-client_system.so
-lib/libqti-at.so
-lib64/vendor.qti.hardware.perf@1.0.so
-lib64/vendor.qti.hardware.iop@1.0.so
-lib64/vendor.qti.hardware.iop@2.0.so
-lib64/libqti_performance.so
-lib64/libqti-util_system.so
-lib64/libqti-perfd-client_system.so
-lib64/libqti-iopd-client_system.so
-lib64/libqti-at.so
 vendor/bin/energy-awareness
 vendor/bin/msm_irqbalance
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
@@ -1259,21 +1245,11 @@ vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
 vendor/lib/vendor.qti.hardware.perf@1.0.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib/libqti-utils.so
-vendor/lib/libqti-iopd-client.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/vendor.qti.hardware.perf@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib64/libqti-utils.so
-vendor/lib64/libqti-iopd-client.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
@@ -1294,10 +1270,8 @@ vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # QMI - from MI 8 Lite platina-user 9 PKQ1.181007.001 9.3.28 release-keys
-etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
-
-# QMI
 etc/permissions/qti_permissions.xml
+etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/lib/libdiag.so
@@ -1469,18 +1443,10 @@ vendor/lib64/libthermalfeature.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
 
-# Thermal modded files - from srfarias
-vendor/etc/thermal-engine-camera.conf|31e5e78b12ffd48548381264bb606210ba7ed4f1
-vendor/etc/thermal-engine-sgame.conf|ad086a888385ca1395157edb3d57e78b10681c6d
-vendor/etc/thermal-engine-Youtube.conf|06dad77a443f55dc87f8b9a738ac2d28e7ea9a15
-vendor/etc/thermal-engine-map.conf|34a9c4c05bb7584f8656772bb26e21b9dd15379b
-vendor/etc/thermal-engine-normal.conf|1ce9d3ed8ae0ed6884272da2ded66ebfead98dea
-vendor/etc/thermal-engine-pubgmhd.conf|e09edc6a5a7c7dc4c00468c4285e391e4091f669
-
-# Time services - from LA.UM.7.2.r1-06900-sdm660.0
--vendor/app/TimeService/TimeService.apk|693a68e35a2cbc40d23b291fcc836c8567f90b14
-vendor/bin/time_daemon|ac244644735005d4c4322168001dcd3ae757007f
-vendor/lib64/libtime_genoff.so|9de68b1aa139b06b0e455bd1c24ed0c527492c3b
+# Time services
+-vendor/app/TimeService/TimeService.apk
+vendor/bin/time_daemon
+vendor/lib64/libtime_genoff.so
 
 # Wifi
 vendor/bin/cnss-daemon
@@ -1523,6 +1489,7 @@ lib64/libmmrtpdecoder.so
 lib64/libmmrtpencoder.so
 lib64/libwfdclient.so
 lib64/libwfdnative.so
+-priv-app/WfdService/WfdService.apk
 vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
@@ -1533,6 +1500,3 @@ vendor/lib/libwfdhdcpcp.so
 vendor/lib/libwfdmmservice.so
 vendor/lib/libwfdmodulehdcpsession.so
 vendor/lib64/libwfdhdcpcp.so
-
-# WfdService - from OnePlus5T PKQ1.180716.001
--priv-app/WfdService/WfdService.apk|d4d1f7d9f610efeb2a61705320539012f55ec634
