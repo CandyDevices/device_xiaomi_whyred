@@ -1,16 +1,16 @@
 [
   {
     "repository" : "vendor_xiaomi",
-    "target_path": "vendor/xiaomi"
+    "target_path": "vendor/xiaomi",
+    "branch": "c9.0-whyred"
   },
   {
     "repository" : "kernel_xiaomi_whyred",
-    "target_path": "kernel/xiaomi/sdm660"
+    "target_path": "kernel/xiaomi/whyred"
   },
   {
     "repository" : "device_xiaomi_whyred",
     "target_path": "device/xiaomi/whyred",
-    "branch": "pie"
   },
   {
     "repository": "LineageOS/android_packages_resources_devicesettings",
