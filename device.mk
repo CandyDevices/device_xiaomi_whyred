@@ -391,7 +391,11 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service
 
-# Telephony
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    device/xiaomi/whyred
+
+# Tetheroffload
 PRODUCT_PACKAGES += \
     telephony-ext
 
