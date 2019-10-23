@@ -23,10 +23,6 @@
 
 DEVICE_PATH := device/xiaomi/whyred
 
-ALLOW_MISSING_DEPENDENCIES=true
-
-UILD_BROKEN_DUP_RULES := true
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 TARGET_NO_BOOTLOADER := true
