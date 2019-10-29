@@ -124,6 +124,7 @@ on boot
 
     # Touchscreen
     chown system system /sys/class/input/input2/wake_gesture
+    write /sys/class/input/input2/wake_gesture 1
 
     #add for display feature
     chown system system /sys/class/graphics/fb0/msm_fb_ce
