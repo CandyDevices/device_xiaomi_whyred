@@ -28,6 +28,9 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 # Inherit Candy product configuration
 $(call inherit-product, vendor/candy/config/common_full_phone.mk)
 
+# Inherit pixelgapps
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+
 PRODUCT_NAME := candy_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
