@@ -576,4 +576,13 @@
     <!-- Whether to artificially interpret all signal strengths as
          one bar higher than they actually are -->
     <bool name="config_inflateSignalStrength">true</bool>
+
+    <!-- Enable doze by default -->
+    <bool name="config_doze_enabled_by_default">true</bool>    
+
+    <!-- Doze: should the TYPE_TILT_GESTURE sensor be used as a pulse signal. -->
+    <bool name="config_dozePulseTilt">true</bool>
+
+    <!-- Doze: should the TYPE_PROXIMITY sensor be used as a pulse signal. -->
+    <bool name="config_dozePulseProximity">true</bool>
 </resources>
