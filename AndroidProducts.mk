@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/carbon_whyred.mk
+    $(LOCAL_DIR)/candy_whyred.mk
+
+COMMON_LUNCH_CHOICES := \
+		candy_whyred-eng \
+		candy_whyred-userdebug \
+		candy_whyred-user

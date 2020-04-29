@@ -10,9 +10,7 @@
     "repository": "xiaomi-sdm660/android_vendor_xiaomi_MiuiCamera",
     "target_path": "vendor/xiaomi/MiuiCamera"
   },
-  {
-    "revision": "kernel-eas-newcam",
-    "repository": "theradcolor/android_kernel_xiaomi_whyred",
+    "repository": "android_kernel_xiaomi_whyred",
     "target_path": "kernel/xiaomi/whyred"
-  }
+  },
 ]
