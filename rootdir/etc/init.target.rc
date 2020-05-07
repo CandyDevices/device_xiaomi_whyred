@@ -365,3 +365,9 @@ on property:persist.sys.display_gamma=1
 
 on property:persist.sys.display_gamma=2
     write /sys/class/graphics/fb0/msm_fb_gamma 2
+
+#add 720p@240fps video
+on  property:vendor.camera.cpuperf.en=1
+	write /dev/stune/foreground/schedtune.prefer_idle 1
+on  property:vendor.camera.cpuperf.en=0
+	write /dev/stune/foreground/schedtune.prefer_idle 0
