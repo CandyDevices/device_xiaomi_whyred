@@ -211,6 +211,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.netmgrd.qos.enable=true \
     persist.vendor.data.mode=concurrent
 
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.perf.gestureflingboost.enable=true
+
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.ims_volte_enable=1 \
