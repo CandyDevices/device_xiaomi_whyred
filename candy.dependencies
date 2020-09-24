@@ -20,5 +20,9 @@
     "repository": "fakeyatogod/vendor_dirac",
     "target_path": "vendor/dirac"
   }
+    "repository"  : "ezio84/android_vendor_pixelgapps",
+    "target_path" : "vendor/pixelgapps",
+    "remote"      : "gitlab",
+  }
 ]
 
